@@ -1,0 +1,226 @@
+/* Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+/* Reset */
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html,
+body,
+#root{
+    width:100%;
+    height:100%;
+    margin:0;
+    padding:0;
+}
+
+/* Background */
+body{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    min-height:100vh;
+
+    background:
+    radial-gradient(circle at top,#ff000015 0%,transparent 35%),
+    radial-gradient(circle at bottom,#ff000020 0%,transparent 40%),
+    #0d1117;
+}
+
+/* Main Container */
+.container{
+    width:900px;
+    max-width:95%;
+    margin:auto;
+    padding:40px;
+
+    background:rgba(18,18,18,0.95);
+
+    border:2px solid #ff2b2b;
+    border-radius:25px;
+
+    text-align:center;
+
+    box-shadow:0 0 35px rgba(255,0,0,0.35);
+}
+
+/* Main Title Only */
+.container > h1{
+    color:white;
+    font-size:52px;
+    margin-bottom:10px;
+    text-shadow:0 0 18px red;
+}
+
+/* Subtitle */
+.subtitle{
+    color:#dcdcdc;
+    font-size:22px;
+    font-style:italic;
+    margin-bottom:30px;
+}
+
+/* Input */
+input{
+    width:100%;
+    padding:15px;
+    border-radius:12px;
+    border:2px solid #444;
+    background:#101010;
+    color:white;
+    font-size:17px;
+    margin-bottom:20px;
+    transition:.3s;
+}
+
+input:focus{
+    outline:none;
+    border-color:#ff2020;
+    box-shadow:0 0 15px red;
+}
+
+/* Dropdown */
+select{
+    background:#222;
+    color:white;
+    padding:10px 15px;
+    border:none;
+    border-radius:10px;
+    margin:10px 8px;
+    font-size:16px;
+}
+
+/* Buttons */
+button{
+    background:linear-gradient(to right,#ff0000,#a30000);
+    color:white;
+    border:none;
+    border-radius:30px;
+    padding:12px 30px;
+    font-size:17px;
+    font-weight:600;
+    cursor:pointer;
+    margin:10px;
+    transition:.3s;
+}
+
+button:hover{
+    transform:translateY(-3px) scale(1.05);
+    box-shadow:0 0 20px red;
+}
+
+button:active{
+    transform:scale(.95);
+}
+
+/* Task List */
+ul{
+    list-style:none;
+    margin-top:30px;
+    padding:0;
+}
+
+/* Task Card */
+li{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    flex-wrap:wrap;
+    gap:20px;
+
+    background:#2c2c2c;
+    color:white;
+
+    padding:22px;
+
+    border-radius:18px;
+
+    margin-bottom:20px;
+
+    transition:.3s;
+}
+
+li:hover{
+    transform:translateY(-3px);
+    box-shadow:0 0 15px rgba(255,0,0,.4);
+}
+
+/* Progress Tracker */
+.progress-tracker{
+    margin-top:40px;
+    background:#242424;
+    border:2px solid #ff2020;
+    border-radius:18px;
+    padding:25px;
+}
+
+/* Progress Heading */
+.progress-tracker h2{
+    color:white !important;
+    font-size:32px;
+    margin-bottom:20px;
+    text-shadow:0 0 10px red;
+}
+
+/* Progress Text */
+.progress-text{
+    color:white;
+    font-size:18px;
+    font-weight:600;
+    margin:15px 0;
+}
+
+/* Progress Bar */
+.progress-bar{
+    width:100%;
+    height:22px;
+    background:#444;
+    border-radius:30px;
+    overflow:hidden;
+}
+
+/* Progress Fill */
+.progress{
+    height:100%;
+    background:linear-gradient(90deg,#ff0000,#ff6666);
+    border-radius:30px;
+    transition:width .5s ease;
+}
+
+/* Clear Button */
+.clear-btn{
+    margin-top:25px;
+    background:linear-gradient(to right,#8b0000,#ff0000);
+}
+
+.clear-btn:hover{
+    box-shadow:0 0 20px red;
+}
+
+/* Responsive */
+@media(max-width:768px){
+
+.container{
+    padding:25px;
+}
+
+.container>h1{
+    font-size:38px;
+}
+
+.subtitle{
+    font-size:18px;
+}
+
+li{
+    flex-direction:column;
+    text-align:center;
+}
+
+button{
+    width:100%;
+}
+}
